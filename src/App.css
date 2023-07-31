@@ -1,38 +1,154 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(239, 234, 231);
+  height: 100%;
+  width: 100%;
+}
+
+.homepageImg {
+  position: relative;
+  background-image: url(rachel-park-hrlvr2ZlUNk.jpg);
+  height: 75vh;
+  color: rgb(170, 170, 170);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepageImg:before {
+	content: '';
+	display: block;
+  height: 75vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+.center {
+  filter: brightness(130%);
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.center2 {
+  font-size: 30px;
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.noneDec {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heightWenig {
+  height: 230px;
+  width: 230px;
+  border-radius: 17px;
+  transition: 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapDetail {
+  display: inline-block;
+}
+
+.wrap {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 110px;
+  margin-top: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.heightWenig:hover {
+  background-color: black;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bonbon {
+  text-align: right;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: rgb(29, 29, 29);
+  /* font-size: smaller; */
+  font-family: 'Permanent Marker', cursive;
 }
+
+.imgPan {
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: -6;
+}
+
+.fontFam {
+  z-index: 5;
+  margin-top: -55px;
+  margin-bottom: 30px;
+  margin-left: 125px;
+  padding-left: 10px;
+  font-size: 30px;
+  position: relative;
+  background-color: rgb(247, 246, 244);
+  width: 230px;
+  font-family: 'Caveat', cursive;
+  color: rgb(72, 69, 68);
+}
+.overflow {
+  z-index: 6;
+}
+.smaller {
+  font-size: 25px;
+}
+
+.recipePan {
+  font-family: 'Caveat', cursive;
+  background-color: rgb(247, 246, 244);
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  padding: 10px;
+  color: rgb(72, 69, 68);
+}
+.inPan {
+  font-size: 20px;
+  margin-bottom: 25px
+}
+h4 {
+  font-size: 26px;
+}
+
+.dirPan {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 22px;
+  margin-top: 13px;
+}
+
+.footerPan {
+  font-family: 'Caveat', cursive;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.footerPan a {
+  text-decoration: none;
+  color: rgb(72, 69, 68);
+}
+
+
